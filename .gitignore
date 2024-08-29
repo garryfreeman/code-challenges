@@ -1,0 +1,52 @@
+# ИГНОРИРУЕМ ФАЙЛЫ ОС macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Игнорирование папки и файлов из корзины
+.Trashes
+# Игнорирование метафайлов ресурсов Finder
+*.swp
+# Игнорирование метафайлов ресурсов Spotlight
+Spotlight-V100
+
+# Игнорирование метафайлов ресурсов и каталогов macOS
+._*
+.Spotlight-V100
+.fseventsd
+.VolumeIcon.icns
+.DS_Store
+.AppleDB
+.AppleDesktop
+
+# Игнорирование CLion
+.idea/
+cmake-build-*/
+
+# Игнорирование CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+CTestTestfile.cmake
+cmake_install.cmake
+Makefile
+
+# Игнорирование сборочных файлов
+build/
+bin/
+*.o
+*.obj
+*.so
+*.a
+*.dylib
+*.lib
+*.dll
+*.exe
+
+# Игнорирование логов и временных файлов
+*.log
+*.tmp
+
+# Игнорирование файлов настроек IDE
+.idea/
+.vscode/
