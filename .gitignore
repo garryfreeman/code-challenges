@@ -50,3 +50,7 @@ bin/
 # Игнорирование файлов настроек IDE
 .idea/
 .vscode/
+
+# JavaScript
+node_modules
+package-lock.json
