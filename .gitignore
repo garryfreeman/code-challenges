@@ -49,7 +49,7 @@ bin/
 
 # Игнорирование файлов настроек IDE
 .idea/
-.vscode/
+# .vscode/
 
 # JavaScript
 node_modules
