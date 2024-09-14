@@ -14,7 +14,9 @@
  * twoSum([3, 2, 4], 6) // returns [1, 2] or [2, 1]
  */
 
-function twoSum(numbers, target) {
+import { test } from '../tools';
+
+function twoSum(numbers: number[], target: number): [number, number] | undefined {
   const map = new Map();
 
   for (let i = 0; i < numbers.length; i++) {
@@ -28,12 +30,17 @@ function twoSum(numbers, target) {
   }
 }
 
-function twoSum(numbers, target) {
-  for (let i = 0; i < numbers.length; i++) {
-    for (let j = i + 1; j < numbers.length; j++) {
-      if (numbers[i] + numbers[j] === target) {
-        return [i, j];
-      }
-    }
-  }
-}
+// function twoSum(numbers, target) {
+//   for (let i = 0; i < numbers.length; i++) {
+//     for (let j = i + 1; j < numbers.length; j++) {
+//       if (numbers[i] + numbers[j] === target) {
+//         return [i, j];
+//       }
+//     }
+//   }
+// }
+
+test(() => twoSum([1, 2, 3], 4), [0, 2]);
+test(() => twoSum([1234, 5678, 9012], 14690), [1, 2]);
+test(() => twoSum([2, 2, 3], 4), [0, 1]);
+test(() => twoSum([2, 3, 1], 3), [0, 2]);

@@ -15,8 +15,10 @@
  * The input to your function will be an array of matrix rows. You can assume that each row has the same length, and that the height and width of the matrix are both positive.
  */
 
-function transpose(matrix) {
-  const result = new Array(matrix[0].length);
+import { test } from '../tools';
+
+function transpose(matrix: number[][]): number[][] {
+  const result: number[][] = new Array(matrix[0].length);
 
   for (let x = 0; x < matrix[0].length; x++) {
     result[x] = [];
@@ -29,18 +31,33 @@ function transpose(matrix) {
   return result;
 }
 
-function transpose(matrix) {
-  const result = [];
+// function transpose(matrix: number[][]): number[][] {
+//   const result = [];
 
-  for (let x = 0; x < matrix[0].length; x++) {
-    for (let y = 0; y < matrix.length; y++) {
-      if (!result[x]) {
-        result[x] = [];
-      }
+//   for (let x = 0; x < matrix[0].length; x++) {
+//     for (let y = 0; y < matrix.length; y++) {
+//       if (!result[x]) {
+//         result[x] = [];
+//       }
 
-      result[x][y] = matrix[y][x];
-    }
-  }
+//       result[x][y] = matrix[y][x];
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
+
+test(() => transpose([[1]]), [[1]]);
+
+test(
+  () =>
+    transpose([
+      [1, 2, 3],
+      [4, 5, 6],
+    ]),
+  [
+    [1, 4],
+    [2, 5],
+    [3, 6],
+  ]
+);

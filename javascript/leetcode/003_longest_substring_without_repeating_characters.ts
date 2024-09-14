@@ -1,18 +1,4 @@
-import { test } from '../tools/test';
-
-// https://leetcode.com/problems/longest-substring-without-repeating-characters/
-// Given a string s, find the length of the longest substring
-// without repeating characters.
-
-// Example 1:
-// Input: s = "abcabcbb"
-// Output: 3
-// Explanation: The answer is "abc", with the length of 3.
-// Example 2:
-
-// Constraints:
-// 0 <= s.length <= 5 * 104
-// s consists of English letters, digits, symbols and spaces.
+import { test } from '../tools';
 
 // Решение №1 O(n^2)
 // function lengthOfLongestSubstring(str: string): number {
@@ -39,6 +25,10 @@ import { test } from '../tools/test';
 // }
 
 // Решение №2 O(n)
+/**
+ * @param {string} str
+ * @return {number}
+ */
 function lengthOfLongestSubstring(str: string): number {
   if (str.length < 2) {
     return str.length;
