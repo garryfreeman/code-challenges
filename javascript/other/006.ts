@@ -1,4 +1,4 @@
-import { test } from '../tools/test';
+import { test } from '../tools';
 
 function isPolindrome(str: string): boolean {
   const match = /[A-Za-zА-Яа-я]/;

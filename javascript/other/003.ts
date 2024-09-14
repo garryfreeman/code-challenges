@@ -1,4 +1,4 @@
-import { test } from '../tools/test';
+import { test } from '../tools';
 
 // это решение лучше если у нас могут быть разные типы скобок
 // function validParentheses(str: string): boolean {

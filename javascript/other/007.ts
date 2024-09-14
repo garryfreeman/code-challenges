@@ -1,4 +1,4 @@
-import { test } from '../tools/test';
+import { test } from '../tools';
 
 const graph: Record<string, string[]> = { A: ['B', 'D'], B: ['C', 'N', 'Z'], D: ['E', 'F'], F: ['S'] };
 

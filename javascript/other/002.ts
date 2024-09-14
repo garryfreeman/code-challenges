@@ -1,4 +1,4 @@
-import { test } from '../tools/test';
+import { test } from '../tools';
 
 // An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
 // Note: anagrams are case insensitive

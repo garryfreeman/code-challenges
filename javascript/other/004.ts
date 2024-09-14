@@ -1,4 +1,4 @@
-import { test } from '../tools/test';
+import { test } from '../tools';
 
 // function sort(nums: number[]): number[] {
 //   let itterations = 0;
