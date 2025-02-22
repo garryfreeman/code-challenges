@@ -1,14 +1,5 @@
+import { ListNode } from '../common';
 import { test } from '../tools';
-
-export class ListNode {
-  val: number;
-  next: ListNode | null;
-
-  constructor(val?: number, next?: ListNode) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-}
 
 /**
  * Definition for singly-linked list.
