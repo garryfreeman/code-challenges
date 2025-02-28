@@ -1,5 +1,5 @@
-import { ListNode } from '../common';
-import { test } from '../tools';
+import { ListNode } from '../../common';
+import { test } from '../../tools';
 
 /**
  * Definition for singly-linked list.

@@ -1,4 +1,4 @@
-import { test, TreeNode } from '../tools';
+import { test, TreeNode } from '../../tools';
 
 function maxPathSum(root: TreeNode): number {
   let answer = 0;

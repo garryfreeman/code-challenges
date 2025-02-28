@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 function getNeighborsCoord(image: number[][], sr: number, sc: number, color: number) {
   const neighbours: [number, number][] = [];

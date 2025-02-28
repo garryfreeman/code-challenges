@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 function containsDuplicate(nums: number[]): boolean {
   const seen = new Set<number>();

@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 // solution #1 ~ 600ms
 // function findEvenNumbers(digits: number[]): number[] {

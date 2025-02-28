@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 // function groupAnagrams(strs: string[]): string[][] {
 //   const map = new Map<string, string[]>();

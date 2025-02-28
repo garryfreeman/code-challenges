@@ -1,5 +1,5 @@
-import { ListNode } from '../common';
-import { test } from '../tools';
+import { ListNode } from '../../common';
+import { test } from '../../tools';
 
 function detectCycle(head: ListNode | null): ListNode | null {
   if (!head?.next!) {

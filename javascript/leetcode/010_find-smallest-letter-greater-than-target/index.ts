@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 function nextGreatestLetter(letters: string[], target: string): string {
   let start = 0;

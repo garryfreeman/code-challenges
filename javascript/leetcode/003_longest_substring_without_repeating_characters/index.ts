@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 // Решение №1 O(n^2)
 // function lengthOfLongestSubstring(str: string): number {

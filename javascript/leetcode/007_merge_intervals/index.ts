@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 function merge(intervals: number[][]): number[][] {
   if (intervals.length === 0) return [];

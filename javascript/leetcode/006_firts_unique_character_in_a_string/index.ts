@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 // function firstUniqChar(s: string): number {
 //   const dictionary: Record<string, number> = {};

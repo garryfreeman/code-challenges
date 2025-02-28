@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 function isPalindrome(str: string): boolean {
   let start = 0;

@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 // function topKFrequent(nums: number[], k: number): number[] {
 //   const map = new Map<number, number>();

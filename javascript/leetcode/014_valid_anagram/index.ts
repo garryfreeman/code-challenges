@@ -1,4 +1,4 @@
-import { test } from '../tools';
+import { test } from '../../tools';
 
 function isAnagram(s: string, t: string): boolean {
   if (s.length !== t.length) return false;
