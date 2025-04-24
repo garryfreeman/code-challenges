@@ -1,27 +1,55 @@
 import { test } from '../../tools';
 
 function merge(intervals: number[][]): number[][] {
-  if (intervals.length === 0) return [];
+  if (intervals.length < 2) return intervals;
 
   intervals.sort((a, b) => a[0] - b[0]);
 
-  const result: number[][] = [intervals[0]];
+  const result: number[][] = [];
 
-  for (let i = 1; i < intervals.length; i++) {
-    const lastMerged = result[result.length - 1];
-    const current = intervals[i];
+  for (const interval of intervals) {
+    const last = result.at(-1);
 
-    if (lastMerged[1] >= current[0]) {
-      lastMerged[1] = Math.max(lastMerged[1], current[1]);
+    if (!last) {
+      result.push(interval);
 
       continue;
     }
 
-    result.push(current);
+    if (last[1] >= interval[0]) {
+      last[1] = Math.max(last[1], interval[1]);
+
+      continue;
+    }
+
+    result.push(interval);
   }
 
   return result;
 }
+
+// function merge(intervals: number[][]): number[][] {
+//   if (intervals.length === 0) return [];
+
+//   intervals.sort((a, b) => a[0] - b[0]);
+
+//   const result: number[][] = [intervals[0]];
+
+//   for (let i = 1; i < intervals.length; i++) {
+//     const lastMerged = result[result.length - 1];
+//     const current = intervals[i];
+
+//     if (lastMerged[1] >= current[0]) {
+//       lastMerged[1] = Math.max(lastMerged[1], current[1]);
+
+//       continue;
+//     }
+
+//     result.push(current);
+//   }
+
+//   return result;
+// }
 
 test(
   () =>
