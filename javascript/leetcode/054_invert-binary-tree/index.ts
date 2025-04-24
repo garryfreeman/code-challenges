@@ -1,5 +1,6 @@
 import { TreeNode } from '../../common';
 
+// Solution 1: Recursive
 function invertTree(root: TreeNode | null): TreeNode | null {
   if (!root) return root;
 
@@ -11,3 +12,21 @@ function invertTree(root: TreeNode | null): TreeNode | null {
 
   return root;
 }
+
+// // Solution 2: Iterative
+// function invertTree(root: TreeNode | null): TreeNode | null {
+//   if (!root) return root;
+
+//   const stack: TreeNode[] = [root];
+
+//   while (stack.length) {
+//     const node = stack.pop()!;
+
+//     [node.left, node.right] = [node.right, node.left];
+
+//     if (node.left) stack.push(node.left);
+//     if (node.right) stack.push(node.right);
+//   }
+
+//   return root;
+// }
