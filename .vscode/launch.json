@@ -15,7 +15,8 @@
         "TS_NODE_PROJECT": "${workspaceFolder}/javascript/tsconfig.json"
       },
       "sourceMaps": true,
-      "outFiles": ["${workspaceFolder}/**/*.js"]
+      "outFiles": ["${workspaceFolder}/**/*.js"],
+      "cwd": "${workspaceFolder}/javascript"
     }
   ]
 }
